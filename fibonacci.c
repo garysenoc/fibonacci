@@ -1,11 +1,9 @@
 #include <stdio.h>
-int fibonacci(int num)
-{
-    if (num<2)
-        return num;
-    else
-        return fibonacci(num-1) + fibonacci(num-2);
+
+int fibonacci(int n){
+return (n==0) ? 0 : (n==1) ? 1 : (fibonacci(n-1) + fibonacci(n-2));// use ternary and recursion to shorten code
 }
+
 int main()
 {
     int val=0,res=0,i;
